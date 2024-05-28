@@ -1,6 +1,9 @@
 <x-layout>
     <x-slot:title>Jobs</x-slot:title>
-    <x-slot:heading>Jobs Page</x-slot:heading>
+    <x-slot:heading>
+        Jobs Page
+    </x-slot:heading>
+
     <div class="space-y-4">
     @foreach($jobs as $job)
         <a class="block px-4 py-6 border border-gray-200 rounded-lg hover:opacity-70" href="/jobs/{{$job['id']}}">
